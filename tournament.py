@@ -15,17 +15,6 @@ def deleteMatches():
     conn.commit()
     conn.close()
 
-
-def deletePlayers():
-    """Remove all the player records from the database."""
-    conn = connect()
-    c = conn.cursor()
-    query = "DELETE FROM players"
-    c.execute(query)
-    conn.commit()
-    conn.close()
-
-
 def countPlayers():
     """Returns the number of players currently registered."""
     conn = connect()
